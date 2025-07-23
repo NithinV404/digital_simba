@@ -5,6 +5,7 @@ import { FaPlay } from "react-icons/fa";
 export default function Banner() {
   return (
     <>
+      
       <div className="hidden md:flex relative flex-col m-6 rounded-4xl bg-gradient-to-r from-blue-200 to-purple-200 items-start justify-between gap-8 px-10 pt-10 pb-32">
         <div className="flex flex-row items-center justify-between px-10 space-x-62">
           <div className="flex flex-col items-start gap-4">
