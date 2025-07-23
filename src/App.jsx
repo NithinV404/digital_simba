@@ -1,13 +1,13 @@
+import Homepage from "./Pages/Homepage"
 import Header from "./Components/Header"
 
-function App() {
+export default function App() {
   
 
   return (
     <>
       <Header />
+      <Homepage />
     </>
   )
 }
-
-export default App
