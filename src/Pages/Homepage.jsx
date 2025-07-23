@@ -5,9 +5,10 @@ import FeatureSection from "../Components/Homepage/features"
 export default function Homepage() {
   return (
     <>
+      <Header />
       <Banner />
       <AboutSection /> 
       <FeatureSection />
     </>
-  )
+  );
 }
