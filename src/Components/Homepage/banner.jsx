@@ -2,6 +2,7 @@ import { BsFillArrowUpRightCircleFill } from "react-icons/bs";
 
 import { FaPlay } from "react-icons/fa";
 
+
 export default function Banner() {
   return (
     <>
