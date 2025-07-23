@@ -82,7 +82,7 @@ export default function Header() {
                         <div
                           key={idx}
                           onMouseEnter={() => setHoverImg(item.img)}
-                          className="hover:bg-gray-50 p-3 rounded-md transition-colors cursor-pointer flex items-start"
+                          className="hover:bg-purple-200 p-3 rounded-md transition-colors cursor-pointer flex items-start"
                         >
                           {item.icon}
                           <div className="flex-1">
@@ -117,7 +117,7 @@ export default function Header() {
             <button className="px-4 py-2 text-gray-600 border-2 rounded-full hover:text-gray-800 transition-colors">
               USD
             </button>
-            <button className="hidden md:block bg-blue-600 rounded-full hover:bg-blue-700 text-white px-4 py-2 font-medium transition-colors">
+            <button className="hidden md:block bg-gray-800 rounded-full hover:bg-gray-900 text-white px-4 py-2 font-medium transition-colors">
               Login
             </button>
             <button
@@ -178,13 +178,13 @@ export default function Header() {
             <div className="flex flex-col space-y-2 mt-6">
               <a
                 href="/get-started"
-                className="bg-simba-green text-white rounded-full px-4 py-2 font-medium text-center hover:bg-blue-700"
+                className="bg-blue-500 text-white rounded-full px-4 py-2 font-medium text-center hover:bg-blue-700"
               >
                 Get Started
               </a>
               <a
                 href="/login"
-                className="bg-gray-100 text-blue-600 rounded-full px-4 py-2 font-medium text-center hover:bg-blue-100"
+                className="bg-purple-500 text-white rounded-full px-4 py-2 font-medium text-center hover:bg-blue-100"
               >
                 Login
               </a>
