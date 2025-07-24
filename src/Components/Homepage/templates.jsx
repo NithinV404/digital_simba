@@ -12,7 +12,7 @@ export default function FeatureCard() {
 
       <div className="relative mt-10 bg-gray-100 rounded-4xl p-8 max-w-xl w-100 shadow-md min-h-[220px] flex flex-col justify-center border-b-2 border-b-transparent hover:border-b-4 hover:border-b-purple-600 transition-all duration-300">
         <div className="absolute top-0 right-0 flex items-center justify-center">
-          <div className="bg-white rounded-full p-2 shadow-md flex items-center justify-center">
+          <div className="bg-white rounded-full p-2  flex items-center justify-center">
             <div className="bg-purple-600 rounded-full p-4 shadow-lg flex items-center justify-center">
               <FaFacebookF className="text-white w-5 h-5" />
             </div>
