@@ -7,6 +7,8 @@ import WhySimba from "../Components/Homepage/whysimba";
 import FAQs from "../Components/Homepage/faqs";
 import ServiceSection from "../Components/Homepage/service_section";
 import ReviewsSection from "../Components/Homepage/reviews";
+import Team from "../Components/Homepage/team";
+import PricingPlan from "../Components/Homepage/pricingplan";
 
 export default function Homepage() {
   return (
@@ -20,7 +22,9 @@ export default function Homepage() {
       <Templates /> 
       <WhySimba />
       <FAQs />
-      <ReviewsSection />
+      <Team />
+      <PricingPlan />
+    <ReviewsSection />
     </>
   );
 }
