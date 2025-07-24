@@ -13,7 +13,6 @@ import PricingPlan from "../Components/Homepage/pricingplan";
 export default function Homepage() {
   return (
     <>
-      <Header />
       <Banner />
       <AboutSection /> 
       <FeatureSection />
