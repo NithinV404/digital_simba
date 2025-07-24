@@ -11,6 +11,7 @@ import ReviewsSection from "../Components/Homepage/reviews";
 export default function Homepage() {
   return (
     <>
+      <Header />
       <Banner />
       <AboutSection /> 
       <FeatureSection />
