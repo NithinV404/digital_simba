@@ -1,5 +1,5 @@
-import AboutSection from "../Components/Homepage/about_us"
-import Banner from "../Components/Homepage/banner"
+import Banner from "../Components/Homepage/banner";
+import AboutSection from "../Components/Homepage/About_us"
 import FeatureSection from "../Components/Homepage/features"
 
 export default function Homepage() {
