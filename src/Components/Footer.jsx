@@ -7,6 +7,8 @@ import {
   FaTiktok,
 } from "react-icons/fa6";
 
+import {FaLongArrowAltRight} from "react-icons/fa"
+
 const socialIcons = [
   { icon: <FaFacebookF />, color: "bg-[#facc15]" },
   { icon: <FaLinkedinIn />, color: "bg-[#facc15]" },
@@ -40,13 +42,13 @@ export default function Footer() {
             href="https://calendly.com/mahendraai/docuvaai"
             className="bg-[#8b5cf6] hover:bg-[#7c3aed] text-white px-4 md:px-8 py-3 rounded-full font-semibold flex items-center justify-center gap-2 transition w-full"
           >
-            Book a demo <span className="text-lg">→</span>
+            Book a demo <span className="text-lg"><FaLongArrowAltRight /></span>
           </a>
           <a
             href="https://digitalsimba.io/login"
             className="bg-[#8b5cf6] hover:bg-[#7c3aed] text-white px-4 md:px-8 py-3 rounded-full font-semibold flex items-center justify-center gap-2 transition w-full"
           >
-            Get Started Free <span className="text-lg">→</span>
+            Get Started Free <span className="text-lg"><FaLongArrowAltRight /></span>
           </a>
         </div>
       </div>
@@ -67,9 +69,9 @@ export default function Footer() {
     />
     <button
       type="submit"
-      className="bg-[#8b5cf6] hover:bg-[#7c3aed] text-white px-4 md:px-8 py-3 rounded-full sm:rounded-lg md:rounded-full font-semibold flex items-center justify-center gap-2 transition text-lg w-full sm:w-auto"
+      className="bg-[#8b5cf6] space-x-2 hover:bg-[#7c3aed] text-white px-4 md:px-8 py-3 rounded-full sm:rounded-lg md:rounded-full font-semibold flex items-center justify-center gap-2 transition text-lg w-full sm:w-auto"
     >
-      SUBSCRIBE <span>→</span>
+      SUBSCRIBE <FaLongArrowAltRight/>
     </button>
   </form>
 </div>
