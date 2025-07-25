@@ -9,6 +9,7 @@ import ServiceSection from "../Components/Homepage/service_section";
 import ReviewsSection from "../Components/Homepage/reviews";
 import Team from "../Components/Homepage/team";
 import PricingPlan from "../Components/Homepage/pricingplan";
+import Blog from "../Components/Homepage/blog";
 
 export default function Homepage() {
   return (
@@ -24,6 +25,7 @@ export default function Homepage() {
       <Team />
       <PricingPlan />
       <ReviewsSection />
+      <Blog />
     </>
   );
 }
