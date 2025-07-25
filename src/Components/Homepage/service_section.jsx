@@ -173,7 +173,9 @@ const ServiceSection = () => {
 
       <section className="py-20 md:py-[110px] relative overflow-x-clip bg-white text-gray-800">
         <div className="container mx-auto px-4 relative">
-          {/* First Section */}
+          <div className="hidden lg:block absolute left-0 top-0 h-full w-20 z-0">
+            <div className="absolute left-14 top-0 h-full w-0.5 bg-purple-500 transform -translate-x-1/2" />
+          </div>
           <div className="flex items-start relative z-10 mb-24">
             <div className="hidden lg:flex flex-col items-center w-20 relative z-10">
               <div className="flex items-center justify-center text-4xl rounded-full border-1 border-purple-500 p-4 h-20 w-20 text-purple-500 bg-white shadow-lg z-10">
