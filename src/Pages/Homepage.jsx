@@ -24,8 +24,8 @@ export default function Homepage() {
       <FAQs />
       <Team />
       <PricingPlan />
-    <ReviewsSection />
-    <Blog />
+      <ReviewsSection />
+      <Blog />
     </>
   );
 }
