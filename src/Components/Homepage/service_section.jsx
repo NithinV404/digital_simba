@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { BiLaptop } from "react-icons/bi";
 import { GoArrowUpRight } from "react-icons/go";
 
+// Horizontal scroll hook
 const useHorizontalScroll = () => {
   const elRef = useRef();
   useEffect(() => {
@@ -160,21 +161,19 @@ const tabItems = [
 const ServiceSection = () => {
   const [activeTab, setActiveTab] = useState(0);
   const scrollContainerRef = useHorizontalScroll();
+  const scrollContainerRef2 = useHorizontalScroll();
 
   return (
     <>
       <style>{`
-                .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-                .hide-scrollbar::-webkit-scrollbar { display: none; }
-                .hide-scrollbar.active { cursor: grabbing; cursor: -webkit-grabbing; }
-            `}</style>
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar.active { cursor: grabbing; cursor: -webkit-grabbing; }
+      `}</style>
 
       <section className="py-20 md:py-[110px] relative overflow-x-clip bg-white text-gray-800">
         <div className="container mx-auto px-4 relative">
-          <div className="hidden lg:block absolute left-0 top-0 h-full w-20 z-0">
-            <div className="absolute left-14 top-0 h-full w-0.5 bg-purple-500 transform -translate-x-1/2" />
-          </div>
-
+          {/* First Section */}
           <div className="flex items-start relative z-10 mb-24">
             <div className="hidden lg:flex flex-col items-center w-20 relative z-10">
               <div className="flex items-center justify-center text-4xl rounded-full border-1 border-purple-500 p-4 h-20 w-20 text-purple-500 bg-white shadow-lg z-10">
@@ -207,16 +206,16 @@ const ServiceSection = () => {
               <div
                 ref={scrollContainerRef}
                 className="
-    overflow-x-auto
-    hide-scrollbar
-    cursor-grab
-    w-full
-    sm:w-[380px]
-    md:w-[762px]
-    lg:w-[1060px]
-    max-w-full
-    p-10
-  "
+                  overflow-x-auto
+                  hide-scrollbar
+                  cursor-grab
+                  w-full
+                  sm:w-[380px]
+                  md:w-[762px]
+                  lg:w-[1060px]
+                  max-w-full
+                  p-10
+                "
               >
                 <div className="flex space-x-6 min-w-max">
                   {serviceItemsOne.map((item, index) => (
@@ -255,6 +254,7 @@ const ServiceSection = () => {
             </div>
           </div>
 
+          {/* Second Section - Now Scrollable */}
           <div className="flex items-start relative z-10 mb-24">
             <div className="hidden lg:flex flex-col items-center w-20 relative z-10">
               <div className="flex items-center justify-center text-4xl rounded-full border-2 border-purple-500 p-4 h-20 w-20 text-purple-500 bg-white shadow-lg z-10">
@@ -273,12 +273,25 @@ const ServiceSection = () => {
                   </p>
                 </div>
               </div>
-              <div className="overflow-x-auto pb-4 flex justify-start hide-scrollbar">
-                <div className="flex space-x-6 min-w-max p-10">
+              <div
+                ref={scrollContainerRef2}
+                className="
+                  overflow-x-auto
+                  hide-scrollbar
+                  cursor-grab
+                  w-full
+                  sm:w-[380px]
+                  md:w-[762px]
+                  lg:w-[1060px]
+                  max-w-full
+                  p-10
+                "
+              >
+                <div className="flex space-x-6 min-w-max">
                   {serviceItemsTwo.map((item, index) => (
                     <div
                       key={index}
-                      className="flex-shrink-0 w-80 p-6 rounded-4xl text-center service-item bg-gray-100 flex flex-col justify-between relative h-[300px]" // <-- flex, relative, height
+                      className="flex-shrink-0 w-80 p-6 rounded-4xl text-center service-item bg-gray-100 flex flex-col justify-between relative h-[300px]"
                     >
                       <div>
                         <div className="mb-4 flex justify-center">
@@ -309,6 +322,7 @@ const ServiceSection = () => {
             </div>
           </div>
 
+          {/* Third Section (Tabs) */}
           <div className="flex items-start relative z-10">
             <div className="hidden lg:flex flex-col items-center w-20 relative z-10">
               <div className="flex items-center justify-center text-4xl rounded-full border-2 border-purple-500 p-4 h-20 w-20 text-purple-500 bg-white shadow-lg z-10">

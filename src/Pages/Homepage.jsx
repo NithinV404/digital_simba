@@ -23,7 +23,7 @@ export default function Homepage() {
       <FAQs />
       <Team />
       <PricingPlan />
-    <ReviewsSection />
+      <ReviewsSection />
     </>
   );
 }

@@ -18,33 +18,33 @@ const socialIcons = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#292c31] text-white pt-30">
+    <footer className="bg-[#292c31] text-white pt-30 overflow-x-hidden">
       <div className="relative flex flex-col items-center px-4">
-  <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-    <img
-      src="https://digitalsimba.io/assets/images/global/frontend/682581b41ca3a1747288500.png"
-      alt="682581b41ca3a1747288500.png"
-      className="footer-top-img"
-    />
-  </div>
-        <div className="absolute inset-0 flex justify-center items-center pointer-events-none opacity-30">
+        <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full sm:w-full md:w-4xl lg:w-4xl">
+          <img
+            src="https://digitalsimba.io/assets/images/global/frontend/682581b41ca3a1747288500.png"
+            alt="682581b41ca3a1747288500.png"
+            className="footer-top-img object-contain"
+          />
         </div>
+        <div className="absolute inset-0 flex justify-center items-center pointer-events-none opacity-30"></div>
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-2 z-10">
           Improve your social media content
         </h2>
         <p className="text-gray-300 text-center max-w-xl mb-8 z-10">
           Enhance your social media presence with engaging, high-quality content that captures attention and drives results
         </p>
-        <div className="flex gap-4 mb-12 z-10">
+        {/* Responsive Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 mb-12 z-10 w-full max-w-md mx-auto">
           <a
             href="https://calendly.com/mahendraai/docuvaai"
-            className="bg-[#8b5cf6] hover:bg-[#7c3aed] text-white px-8 py-3 rounded-full font-semibold flex items-center gap-2 transition"
+            className="bg-[#8b5cf6] hover:bg-[#7c3aed] text-white px-4 md:px-8 py-3 rounded-full font-semibold flex items-center justify-center gap-2 transition w-full"
           >
             Book a demo <span className="text-lg">→</span>
           </a>
           <a
             href="https://digitalsimba.io/login"
-            className="bg-[#8b5cf6] hover:bg-[#7c3aed] text-white px-8 py-3 rounded-full font-semibold flex items-center gap-2 transition"
+            className="bg-[#8b5cf6] hover:bg-[#7c3aed] text-white px-4 md:px-8 py-3 rounded-full font-semibold flex items-center justify-center gap-2 transition w-full"
           >
             Get Started Free <span className="text-lg">→</span>
           </a>
@@ -52,27 +52,27 @@ export default function Footer() {
       </div>
 
       {/* Newsletter */}
-      <div className="flex justify-end py-20">
-        <form
-          action="https://digitalsimba.io/subscribe"
-          method="post"
-          className="w-full md:w-2/3 lg:w-1/2 flex bg-white rounded-full shadow-lg p-2 pr-2 mt-[-3rem] z-20"
-        >
-          <input
-            name="email"
-            type="email"
-            placeholder="Enter Your Email"
-            className="flex-1 px-6 py-4 rounded-full text-gray-800 outline-none text-lg"
-            required
-          />
-          <button
-            type="submit"
-            className="bg-[#8b5cf6] hover:bg-[#7c3aed] text-white px-8 py-3 rounded-full font-semibold flex items-center gap-2 transition text-lg"
-          >
-            SUBSCRIBE <span>→</span>
-          </button>
-        </form>
-      </div>
+     <div className="flex justify-end py-20">
+  <form
+    action="https://digitalsimba.io/subscribe"
+    method="post"
+    className="w-full max-w-lg flex flex-col sm:flex-row bg-white rounded-lg md:rounded-full shadow-lg p-2 pr-2 mt-[-3rem] z-20"
+  >
+    <input
+      name="email"
+      type="email"
+      placeholder="Enter Your Email"
+      className="flex-1 px-4 py-3 rounded-md sm:rounded-l-full sm:rounded-r-none text-gray-800 outline-none text-lg mb-2 sm:mb-0"
+      required
+    />
+    <button
+      type="submit"
+      className="bg-[#8b5cf6] hover:bg-[#7c3aed] text-white px-4 md:px-8 py-3 rounded-full sm:rounded-lg md:rounded-full font-semibold flex items-center justify-center gap-2 transition text-lg w-full sm:w-auto"
+    >
+      SUBSCRIBE <span>→</span>
+    </button>
+  </form>
+</div>
 
       {/* Links */}
       <div className="container mx-auto px-4 py-16">
