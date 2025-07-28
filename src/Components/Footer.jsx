@@ -58,18 +58,18 @@ export default function Footer() {
   <form
     action="https://digitalsimba.io/subscribe"
     method="post"
-    className="w-full max-w-lg flex flex-col sm:flex-row bg-white rounded-lg md:rounded-full shadow-lg p-2 pr-2 mt-[-3rem] z-20"
+    className="w-full max-w-lg flex flex-col sm:flex-row bg-white rounded-lg md:rounded-tl-full md:rounded-bl-full shadow-lg p-2 pr-2 mt-[-3rem] z-20 "
   >
     <input
       name="email"
       type="email"
       placeholder="Enter Your Email"
-      className="flex-1 px-4 py-3 rounded-md sm:rounded-l-full sm:rounded-r-none text-gray-800 outline-none text-lg mb-2 sm:mb-0"
+      className="flex-1 px-4 py-3 rounded-md sm:rounded-l-full sm:rounded-r-none text-gray-800 outline-none text-lg mb-2 sm:mb-0 "
       required
     />
     <button
       type="submit"
-      className="bg-[#8b5cf6] space-x-2 hover:bg-[#7c3aed] text-white px-4 md:px-8 py-3 rounded-full sm:rounded-lg md:rounded-full font-semibold flex items-center justify-center gap-2 transition text-lg w-full sm:w-auto"
+      className="bg-[#8b5cf6] space-x-2 hover:bg-[#7c3aed] text-white px-4 md:px-8 py-3 rounded-l-full sm:rounded-lg md:rounded-l-full font-semibold flex items-center justify-center gap-2 transition text-lg w-full sm:w-auto"
     >
       SUBSCRIBE <FaLongArrowAltRight/>
     </button>
