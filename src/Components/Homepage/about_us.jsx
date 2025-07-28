@@ -6,25 +6,25 @@ export default function AboutSection() {
       title: "Who We Are",
       text: "Digital Simba is an AI-powered social media management platform helping brands grow online. We simplify scheduling, content creation, and analytics in one intuitive dashboard.",
       heartClass: "top-0 left-0",
-      padClass: "pt-8 pl-12",
+      padClass: "pt-8 pl-20",
     },
     {
       title: "What We Do",
       text: "From bulk scheduling to AI-generated content and performance insights, we provide end-to-end tools to manage, optimize, and scale your social media presence.",
       heartClass: "top-0 right-0",
-      padClass: "pt-8 pr-12",
+      padClass: "pt-8 pr-20",
     },
     {
       title: "Our Values",
       text: "We value creativity, innovation, transparency, and customer-first thinking. Our goal is to make social media effortless and impactful for every brand.",
       heartClass: "bottom-0 left-0",
-      padClass: "pb-8 pl-12",
+      padClass: "pb-8 pl-20",
     },
     {
       title: "Why Choose Us",
       text: "With powerful integrations, smart automation, and a user-friendly design, Digital Simba is the go-to solution for modern brands that want to stay ahead in the digital space.",
       heartClass: "bottom-0 right-0",
-      padClass: "pb-8 pr-12",
+      padClass: "pb-8 pr-20",
     },
   ];
 
@@ -81,7 +81,7 @@ export default function AboutSection() {
                     key={idx}
                     className={`relative bg-gray-100 flex flex-col items-start rounded-2xl p-8 shadow z-10 w-full ${card.padClass}`}
                   >
-                    <div className={`absolute rounded-full bg-violet-500 shadow p-2 ${card.heartClass}`}>
+                    <div className={`absolute rounded-full bg-violet-500 border-4 border-white shadow p-2 ${card.heartClass}`}>
                       <BsHeart className="text-white h-8 w-8 p-1" />
                     </div>
                     <h4 className="font-semibold text-2xl mb-2">{card.title}</h4>
